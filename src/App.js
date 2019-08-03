@@ -35,7 +35,10 @@ class App extends React.Component{
   render(){
   return (
     <div className="App">
-      <Todolist/>
+      {this.state.todoList.map(item=>(
+        <Todolist title={item.name} id={item.id}/>
+      ))}
+      
     </div>
   );
   }

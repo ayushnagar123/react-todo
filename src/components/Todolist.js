@@ -5,7 +5,7 @@ class Todolist extends React.Component{
     render(){
         return (
             <div>
-                <li>{this.props.name}</li>
+                <li>{this.props.title} {this.props.id}</li>
             </div>
         )
     }
